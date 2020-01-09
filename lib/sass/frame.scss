@@ -1,0 +1,167 @@
+.Global-color {
+  height: 100%;
+
+  .my-content {
+    padding: (30/75)+rem;
+
+    div {
+      margin: (30/75)+rem auto;
+    }
+
+    .face {
+      background: #FFF8ED;
+      border: 1px solid #FFECCD;
+      color: #FFD48D;
+    }
+
+    .credit {
+      background: #EAF6FF;
+      border: 1px solid #C5E7FF;
+      color: #30AEFF;
+    }
+
+    .personage {
+      background: #FFF3EE;
+      border: 1px solid #FFDED0;
+      color: #FF8C58;
+    }
+
+    .bankcard {
+      background: #F5F2FE;
+      border: 1px solid #E3DAFE;
+      color: #9B7EFE;
+    }
+
+    .phone {
+      background: #FDEFEF;
+      border: 1px solid #FBD3D3;
+      color: #F46565;
+    }
+
+    .my-content-area-face {
+      width: 90%;
+      height: (160/75)+rem;
+
+      border-radius: (2/75)+rem;
+      display: flex;
+
+      //   div {
+      //     flex: 1;
+      //   }
+
+      .content-a {
+        margin-left: (40/75)+rem;
+        margin-top: (40/75)+rem;
+
+        img {
+          width: (80/75)+rem;
+          ;
+        }
+      }
+
+      .content-b {
+        margin-left: (30/75)+rem;
+        margin-top: (20/75)+rem;
+        font-family: PingFangSC-Regular;
+        font-size: (24/75)+rem;
+
+        letter-spacing: 0;
+        text-align: center;
+        text-align: left;
+
+        p {
+          &:nth-child(1) {
+            font-size: (32/75)+rem;
+            margin-bottom: (20/75)+rem;
+          }
+        }
+      }
+
+      .content-c {
+        flex: 1;
+        font-family: PingFangSC-Semibold;
+        font-size: (32/75)+rem;
+        margin: 0;
+        letter-spacing: 0;
+        text-align: right;
+        padding-right: (20/75)+rem;
+        line-height: (160/75)+rem;
+      }
+    }
+  }
+
+  //绑定银行卡
+  .bankcard-page {
+    padding: (20/75)+rem (40/75)+rem;
+
+    h2 {
+      font-size: (30/75)+rem;
+      padding: (30/75)+rem 0;
+    }
+
+    .bankcard-content {
+      .content-area {
+        display: flex;
+        border-bottom: 1px solid #eee
+      }
+
+      .text {
+        width: (150/75)+rem;
+        font-size: (30/75)+rem;
+        padding-left: (20/75)+rem;
+        color: #636363;
+        line-height: (80/75)+rem;
+      }
+
+      .verificationcode {
+        line-height: (80/75)+rem;
+
+        span {
+          background: #854CF8;
+          color: #fff;
+          font-size: (28/75)+rem;
+          padding: (6/75)+rem (20/75)+rem;
+        }
+      }
+
+      .input {
+        line-height: (80/75)+rem;
+        font-size: (30/75)+rem;
+        flex: 1;
+        color: #636363;
+        text-align: right;
+
+        input {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .submit {
+    display: block;
+    padding: 17px 16px;
+    width: 80%;
+    margin: (60/75)+rem auto 0;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    background: #854CF8;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .support_btn {
+    margin-top: 10px;
+
+    i {
+      color: #30aeff;
+    }
+  }
+}

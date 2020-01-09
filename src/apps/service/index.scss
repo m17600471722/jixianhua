@@ -1,0 +1,14 @@
+.text_main{
+  padding: (50/75)+rem (30/75)+rem 0 (30/75)+rem;
+  height: (450/75)+rem;
+  .cube-textarea-wrapper{
+    height: 100%;
+  }
+}
+.submit{
+  border-radius: 1.33333rem;
+  margin-top: (90/75)+rem;
+}
+.cube-textarea-wrapper::after{
+  border: 1PX solid #cec6c6;
+}

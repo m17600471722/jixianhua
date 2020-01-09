@@ -1,0 +1,38 @@
+.advices{
+  .logIn-loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    opacity: 0.3;
+    z-index: 99999999;
+  }
+  .main{
+    padding: 0 (30/75)+rem (30/75)+rem (30/75)+rem;
+    .issue{
+      padding: (24/75)+rem;
+      background: #f3f0f0;
+      border-radius: (10/75)+rem;
+      margin-top: (20/75)+rem;
+      p{
+        font-size: (30/75)+rem;
+        font-weight: bold;
+        padding-bottom: (20/75)+rem;
+        word-wrap:break-word;
+      }
+      span{
+        font-size: (28/75)+rem;
+        color: #7b7b7b;
+        word-wrap:break-word
+      }
+    }
+  }
+  .center{
+    text-align: center;
+    margin-top: (200/75)+rem;
+    font-size: (38/75)+rem;
+    color: #b7b5b5;
+  }
+}

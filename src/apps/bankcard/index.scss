@@ -1,0 +1,66 @@
+.logIn-loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  opacity: 0.3;
+  z-index: 99999999;
+}
+.bankcardBox {
+  .cardTitle {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.4rem;
+    color: #a8acb6;
+  }
+  .cardlist {
+    max-height: (1200/75) + rem;
+    .cardli {
+      padding: 0.5rem 0.8rem;
+      width: 9rem;
+      margin: 0 auto;
+      background-color: #c1c1c1;
+      color: #fff;
+      font-size: (30/75) + rem;
+      border-radius: 7px;
+      margin-top: (30/75) + rem;
+      box-shadow: 0 0 0.26667rem 0 rgba(121, 103, 103, 0.33);
+      p {
+        line-height: (48/75) + rem;
+      }
+      .cardNumber {
+        margin-top: 0.2rem;
+      }
+      .cardType {
+        font-size: (24/75) + rem;
+      }
+    }
+    .cardli.select {
+      background-color: #1279fa;
+      box-shadow: 0 0 0.26667rem 0 rgba(18, 121, 250, 0.4);
+    }
+  }
+  .subBox {
+    position: fixed;
+    width: 100%;
+    bottom: (120/75) + rem;
+    .cardBtn {
+      margin: 0 auto;
+      width: 3.4rem;
+      background-color: #854CF8;
+      color: #ffffff;
+      text-align: center;
+      padding: 0.25rem 0;
+      font-size: (26/75) + rem;
+      border-radius: (40/75) + rem;
+    }
+    .Cardtext {
+      margin-top: (20/75) + rem;
+      font-size: (26/75) + rem;
+      color: #a8acb6;
+      text-align: center;
+    }
+  }
+}

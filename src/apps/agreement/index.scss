@@ -1,0 +1,87 @@
+.Global-color {
+  .home_hade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF923C;
+    color: #fff;
+    padding: 0 10px;
+    height: 1rem;
+    font-size: (40/75)+rem;
+    // position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .home_box {
+    width: 100%;
+    height: 100%;
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: (814/75)+rem;
+      background-color: #FF923C;
+      border-radius: 0 0 (42/75)+rem (42/75)+rem;
+
+      .mbox {
+        display: flex;
+        height: (230/75)+rem;
+        align-items: center;
+        padding-left: (60/75)+rem;
+        color: #fff;
+        font-size: (40/75)+rem;
+        // line-height: (270/75)+rem;
+      }
+
+      .mbox_title {
+        padding-top: 1.2rem;
+      }
+
+      .mboxBottom {
+        justify-content: space-between;
+
+        .loan_btn {
+          width: (240/75)+rem;
+          background-color: #FFDA54;
+          font-family: PingFangSC-Semibold;
+          font-size: (32/75)+rem;
+        }
+
+        .refuse_btn {
+          width: (240/75)+rem;
+          background: #FF6332;
+          border-radius: 2px;
+          border-radius: 2px;
+          font-family: PingFangSC-Semibold;
+          font-size: (32/75)+rem;
+          text-align: center;
+
+          span {
+            font-size: (12/75)+rem;
+            display: inline-block;
+          }
+        }
+      }
+
+      .mtextbox {
+        font-family: PingFangSC-Regular;
+
+        .textnum {
+          font-size: (26/75)+rem;
+          line-height: (65/75)+rem;
+          color: #FFD3B1;
+        }
+
+        .textalt {
+          font-size: (64/75)+rem;
+          font-weight: bold;
+          color: #FFFFFF;
+
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+'use strict'
+
+var nfeChost = "http://test.nfeapp.cn"//车改测试代理
+
+const path = require('path')
+
+module.exports = {
+  dev: {
+    // Paths
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    proxyTable: {
+      '/nfeboot': {
+        target: nfeChost,
+        changeOrigin: true,
+        pathRewrite: {},
+        onProxyReq(proxyReq, req, res) {
+          // console.log("1.Origin:",proxyReq);
+          proxyReq._headers.origin = "http://xuebank.com";
+          // console.log("1.Origin.headers:",proxyReq._headers);
+        },
+        onProxyRes(proxyRes, req, res) {
+          //set-cookie:JSESSIONID=6F766ED2EEEBEAA9245F7F908A848857; Path=/webserver/; HttpOnly
+          // console.log("1.Origin:",req.headers.origin);
+          var oldCookie = proxyRes.headers['set-cookie']
+          if(oldCookie== null || oldCookie.length==0){
+            delete proxyRes.headers['set-cookie']
+            return
+          }
+          // console.log(oldCookie)
+          var oldCookieItems = oldCookie[0].split(';')
+          var newCookie = ''
+          for(var i=0; i < oldCookieItems.length; ++i){
+            if(newCookie.length >0)
+              newCookie += ';'
+            if(oldCookieItems[i].indexOf('Domain=') >= 0)
+              newCookie += 'Domain=localhost'
+            else
+              newCookie += oldCookieItems[i]
+          }
+          // console.log(newCookie);
+          
+          proxyRes.headers['set-cookie'] = [newCookie];
+          //proxyRes.headers['x-addedygc'] = 'foobar';     // add new header to response 
+          //delete proxyRes.headers['connection'];       // remove header from response 
+        }
+      },
+    },
+
+    // Various Dev Server settings
+    host: 'localhost', // can be overwritten by process.env.HOST
+    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    autoOpenBrowser: false,
+    errorOverlay: true,
+    notifyOnErrors: true,
+    poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+
+    // Use Eslint Loader?
+    // If true, your code will be linted during bundling and
+    // linting errors and warnings will be shown in the console.
+    useEslint: true,
+    // If true, eslint errors and warnings will also be shown in the error overlay
+    // in the browser.
+    showEslintErrorsInOverlay: false,
+
+    /**
+     * Source Maps
+     */
+
+    // https://webpack.js.org/configuration/devtool/#development
+    devtool: 'eval-source-map',
+
+    // If you have problems debugging vue-files in devtools,
+    // set this to false - it *may* help
+    // https://vue-loader.vuejs.org/en/options.html#cachebusting
+    cacheBusting: true,
+
+    // CSS Sourcemaps off by default because relative paths are "buggy"
+    // with this option, according to the CSS-Loader README
+    // (https://github.com/webpack/css-loader#sourcemaps)
+    // In our experience, they generally work as expected,
+    // just be aware of this issue when enabling this option.
+    cssSourceMap: false,
+  },
+
+  build: {
+    // Template for index.html
+    index: path.resolve(__dirname, '../dist/index.html'),
+
+    // Paths
+    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsSubDirectory: 'static',
+    assetsPublicPath: './',
+
+    /**
+     * Source Maps
+     * 
+     */
+
+    productionSourceMap: false,
+    // https://webpack.js.org/configuration/devtool/#production
+    devtool: '#source-map',
+
+    // Run the build command with an extra argument to
+    // View the bundle analyzer report after build finishes:
+    // `npm run build --report`
+    // Set to `true` or `false` to always turn it on or off
+    bundleAnalyzerReport: process.env.npm_config_report,
+    //压缩
+    productionGzip: true,
+    productionGzipExtensions: ['js', 'css']
+  }
+}

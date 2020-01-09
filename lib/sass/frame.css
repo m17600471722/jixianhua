@@ -1,0 +1,131 @@
+.Global-color {
+  height: 100%;
+}
+.Global-color .my-content {
+}
+.Global-color .my-content div {
+  margin: 0.4rem auto;
+}
+.Global-color .my-content .face {
+  background: #fff8ed;
+  border: 1px solid #ffeccd;
+  color: #ffd48d;
+}
+.Global-color .my-content .credit {
+  background: #eaf6ff;
+  border: 1px solid #c5e7ff;
+  color: #30aeff;
+}
+.Global-color .my-content .personage {
+  background: #fff3ee;
+  border: 1px solid #ffded0;
+  color: #ff8c58;
+}
+.Global-color .my-content .bankcard {
+  background: #f5f2fe;
+  border: 1px solid #e3dafe;
+  color: #9b7efe;
+}
+.Global-color .my-content .phone {
+  background: #fdefef;
+  border: 1px solid #fbd3d3;
+  color: #f46565;
+}
+.Global-color .my-content .my-content-area-face {
+  width: 90%;
+  height: 2.1333333333rem;
+  border-radius: 0.0866666667rem;
+  display: flex;
+}
+.Global-color .my-content .my-content-area-face .content-a {
+  margin-left: 0.5333333333rem;
+  margin-top: 0.5333333333rem;
+}
+.Global-color .my-content .my-content-area-face .content-a img {
+  width: 1.0666666667rem;
+}
+.Global-color .my-content .my-content-area-face .content-b {
+  margin-left: 0.4rem;
+  margin-top: 0.2666666667rem;
+  font-family: PingFangSC-Regular;
+  font-size: 0.32rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-align: left;
+}
+.Global-color .my-content .my-content-area-face .content-b p:nth-child(1) {
+  font-size: 0.4266666667rem;
+  margin-bottom: 0.2666666667rem;
+}
+.Global-color .my-content .my-content-area-face .content-c {
+  font-family: PingFangSC-Semibold;
+  font-size: 0.4266666667rem;
+  margin: 0;
+  letter-spacing: 0;
+  text-align: right;
+  padding-right: 0.2666666667rem;
+  line-height: 2.1333333333rem;
+}
+.Global-color .bankcard-page {
+  padding: 0.2666666667rem 0.5333333333rem;
+}
+.Global-color .bankcard-page h2 {
+  font-size: 0.4rem;
+  padding: 0.4rem 0;
+}
+.Global-color .bankcard-page .bankcard-content .content-area {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+.Global-color .bankcard-page .bankcard-content .text {
+  width: 2rem;
+  font-size: 0.4rem;
+  padding-left: 0.2666666667rem;
+  color: #636363;
+  line-height: 1.0666666667rem;
+}
+.Global-color .bankcard-page .bankcard-content .verificationcode {
+  line-height: 1.0666666667rem;
+}
+.Global-color .bankcard-page .bankcard-content .verificationcode span {
+  background: #3f70ff;
+  color: #fff;
+  font-size: 0.3733333333rem;
+  padding: 0.08rem 0.2666666667rem;
+}
+.Global-color .bankcard-page .bankcard-content .input {
+  line-height: 1.0666666667rem;
+  font-size: 0.4rem;
+  flex: 1;
+  color: #636363;
+  text-align: right;
+}
+.Global-color .bankcard-page .bankcard-content .input input {
+  text-align: right;
+}
+.Global-color .submit {
+  display: block;
+  padding: 17px 16px;
+  width: 80%;
+  margin: 0.8rem auto 0;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background: #3f70ff;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.Global-color .support_btn {
+  margin-top: 10px;
+}
+.Global-color .support_btn i {
+  color: #30aeff;
+}
+
+/*# sourceMappingURL=frame.css.map */

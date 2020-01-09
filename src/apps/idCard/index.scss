@@ -1,0 +1,245 @@
+.interval {
+  width: 100%;
+  height: (20/75) + rem;
+  background: #f5f5f5;
+}
+.authentication {
+  padding: (40/75) + rem (30/75) + rem (30/75) + rem;
+  background: #fff;
+}
+.hide {
+  font-size: (44/75) + rem;
+  color: #333333;
+}
+.only {
+  display: block;
+  font-size: (26/75) + rem;
+  color: #999999;
+  margin-top: (10/75) + rem;
+}
+.Identity {
+  padding: (24/75) + rem (29/75) + rem;
+  background: #f5f6f9;
+  border-radius: (16/75) + rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: (35/75) + rem;
+  .left {
+    .dracontomclon {
+      font-size: (38/75) + rem;
+      color: #333333;
+    }
+    .updown {
+      font-size: (24/75) + rem;
+      color: #666666;
+      margin-top: (11/75) + rem;
+    }
+  }
+  .right {
+    width: (381/75) + rem;
+    height: (254/75) + rem;
+  }
+}
+.imgCon .selectButton1,
+.imgCon .selectButton2 {
+  display: inline-block;
+  height: (254/75) + rem;
+  width: 100%;
+  border-radius: (10/75) + rem;
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: middle;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.selectButton1 #selectImg1,
+.selectButton2 #selectImg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  height: 44px;
+  border-bottom: 1px solid#EEEEEE;
+  margin-bottom: (20/75) + rem;
+  justify-content: space-between;
+  input {
+    font-size: (32/75) + rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .bottom-input {
+    border-bottom-width: 0px;
+  }
+}
+:-moz-placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+         input:-ms-input-placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+input::-webkit-input-placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+.service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: (24/75) + rem;
+  margin-top: (30/75) + rem;
+  .check {
+    display: block;
+    width: (24/75) + rem;
+    height: (24/75) + rem;
+    border: 1px solid #333;
+    border-radius: 2px;
+    margin-right: (10/75) + rem;
+    img {
+      width: 100%;
+    }
+  }
+  .reg {
+    color: #68400b;
+  }
+  .white {
+    background: #fff;
+  }
+  .black {
+    background: #333;
+  }
+}
+.information {
+  padding: (30/75) + rem (33/75) + rem;
+  background: #f5f6f9;
+  margin-top: (40/75) + rem;
+  .verify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: (24/75) + rem;
+    color: #666666;
+    span {
+      display: block;
+      width: (40/75) + rem;
+      height: 2px;
+      background: #d8d8d8;
+      margin: 0 (15/75) + rem;
+    }
+  }
+  .datum {
+    display: flex;
+    justify-content: flex-start;
+    font-size: (32/75) + rem;
+    color: #999999;
+    margin-top: (15/75) + rem;
+    span {
+      display: block;
+      width: (160/75) + rem;
+      font-size: (32/75) + rem;
+      color: #333333;
+    }
+    .adress {
+      width: 78%;
+      font-size: (32/75) + rem;
+      color: #999999;
+    }
+  }
+}
+.face {
+  width: 100%;
+  height: (100/75) + rem;
+  position: relative;
+  #input_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+.human_face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: (28/75) + rem (30/75) + rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p:first-child {
+    font-size: (32/75) + rem;
+    color: #34373f;
+  }
+  p:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: (32/75) + rem;
+    color: #3f70ff;
+    img {
+      width: (16/75) + rem;
+      height: (28/75) + rem;
+      margin-left: (20/75) + rem;
+    }
+  }
+}
+.btn {
+  width: 100%;
+  height: (88/75) + rem;
+  background: #ff9300;
+  font-size: (32/75) + rem;
+  color: #fff;
+  text-align: center;
+  line-height: (88/75) + rem;
+}
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.4);
+  z-index: 1000;
+  .window {
+    position: relative;
+    width: (635/75) + rem;
+    height: (694/75) + rem;
+    left: 50%;
+    top: (50%);
+    transform: translate(-50%, -50%);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .addbtn {
+    position: absolute;
+    bottom: 5%;
+    width: (246/75) + rem;
+    height: (82/75) + rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1001;
+  }
+}
